@@ -173,8 +173,8 @@ logo = ("""
 \x1b[1;94m║\x1b[1;92m[\x1b[1;91m✔\x1b[1;92m] TOOLS          :        PRO-FILE CLONER          \x1b[1;94m║
 \x1b[1;94m╚═════════════════════════════════════════════════════╝
 """)
-else:
-    pass
+
+l
 os.system("rm -rf .f1")
 os.system("rm -rf .f2")
 update = requests.get("https://raw.githubusercontent.com/ON-FIRE-404/Approval/main/on.txt").text
