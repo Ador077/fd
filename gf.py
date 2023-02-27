@@ -33,14 +33,14 @@ def main():
     	exit("THIS SERVICE IS NOT AVAILABLE NOW!")
     if opt == '3':
     	pak()
-    if None == '4':
+    if opt == '4':
         os.system('xdg-open https://www.facebook.com/ft.alvi.18')
-        return None
-    if None == '5':
+        pak()
+    if opt == '5':
         os.system('xdg-open https://github.com/ACTION-FIRE')
         return None
     if None == '6':
-        os.system('xdg-open https://youtube.com/@FIRE_Vau')
+        os.system('xdg-open https://youtube.com/@ON-FIRE')
     if None == '0':
         os.system('exit')
         return None
@@ -173,6 +173,61 @@ logo = ("""
 \x1b[1;94m║\x1b[1;92m[\x1b[1;91m✔\x1b[1;92m] TOOLS          :        PRO-FILE CLONER          \x1b[1;94m║
 \x1b[1;94m╚═════════════════════════════════════════════════════╝
 """)
+else:
+    pass
+os.system("rm -rf .f1")
+os.system("rm -rf .f2")
+update = requests.get("https://raw.githubusercontent.com/ON-FIRE-404/Approval/main/on.txt").text
+uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
+id = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
+plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
+bxd = ""
+bumper = "FIRE=="+id+bxd+xp
+FIRE = "ACTION-FIRE"
+myweb2 = requests.get(f"https://raw.githubusercontent.com/ON-FIRE-404/Approval/main/on.txt").text
+os.system('xdg-open https://facebook.com/ft.alvi.18')
+logo1 = ("""\x1b[1;94m═════════════════════════════════════════════════════╗
+\x1b[1;94m║                                                     ║
+\x1b[1;94m║  \x1b[1;92m██████  \x1b[1;33m███    ██       \x1b[1;91m███████ \x1b[1;94m██ \x1b[1;96m██████  \x1b[1;95m███████\x1b[1;94m ║
+\x1b[1;94m║ \x1b[1;92m██    ██ \x1b[1;33m████   ██       \x1b[1;91m██      \x1b[1;94m██ \x1b[1;96m██   ██ \x1b[1;95m██\x1b[1;94m      ║
+\x1b[1;94m║ \x1b[1;92m██    ██ \x1b[1;33m██ ██  ██ \x1b[1;92m█████ \x1b[1;91m█████   \x1b[1;94m██ \x1b[1;96m██████  \x1b[1;95m█████\x1b[1;94m   ║
+\x1b[1;94m║ \x1b[1;92m██    ██ \x1b[1;33m██  ██ ██       \x1b[1;91m██      \x1b[1;94m██ \x1b[1;96m██   ██ \x1b[1;95m██\x1b[1;94m      ║
+\x1b[1;94m║  \x1b[1;92m██████  \x1b[1;33m██   ████       \x1b[1;91m██      \x1b[1;94m██ \x1b[1;96m██   ██ \x1b[1;95m███████\x1b[1;94m ║
+\x1b[1;94m║                                                     ║
+\x1b[1;94m╚═════════════════════════════════════════════════════╝
+""")
+def approval():
+    try:
+        os.system('clear')
+        print(logo1)
+        x = requests.get('https://raw.githubusercontent.com/hop09/libraries/main/version.txt').text
+        if str("upppdate") in update:
+            os.system('clear')
+            exit('script is in update / maintanance be patient ')
+        elif str("res-sseett") in update:
+            os.system('')
+            os.system('')
+            os.system('')
+            exit('DONT TRY TO BYPASS')
+        elif bumper in myweb2:
+            print("YOUR KEY WAS APPROVED")
+            FIRE()
+        else:
+            os.system("clear");print(logo)
+            print(f"{RED}YOUR DEVICE LICENSE KEY IS NOT APPROVED")
+            print(55*"\033[1;92m=")
+            print(f"\033[1;92m\033[1;91m[\033[1;92m•\033[1;91m]KEY : {RED}{bumper}")
+            print(55*"\033[1;92m=")
+            print(f"{GREEN}[07]☞︎︎︎DAYS PRICE : 350  TK")
+            print(f"{GREEN}[15]☞︎︎︎DAYS PRICE : 500  TK")
+            print(f"{GREEN}[30]☞︎︎︎DAYS PRICE : 1000 TK")
+            print(f"{BLUE}FREE APPROVAL AVAILABLE CONTACT ME ON MY WHATSAPP TO GET FREE APPROVAL")
+            print(55*"\033[1;92m=")
+            input("\033[1;91m[PRESS ENTER TO SEND KEY TO ADMIN]")
+            os.system(f"termux-open-url https://wa.me/+9660507886506?text={bumper}")
+            approval()
+
 loop = 0
 oks = []
 cps = []
